@@ -1,10 +1,10 @@
+import { CustomParticles } from "@/components/Particles";
 import { ArrowDown } from "lucide-react";
 import { BasicInfo } from "./BasicInfo";
-import { Image } from "./Image";
 
 export const HeroSection = () => {
   const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about");
+    const aboutSection = document.getElementById("experience");
     if (aboutSection) {
       window.scrollTo({
         top: aboutSection.offsetTop - 80,
@@ -16,15 +16,14 @@ export const HeroSection = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center py-20 relative"
+      className="min-h-screen flex items-center py-20 relative overflow-hidden"
     >
-      <div className="absolute top-0 right-0 -z-10 w-1/2 h-full bg-gradient-to-bl from-primary/10 to-transparent" />
-
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <BasicInfo />
-
-          <Image />
+      <CustomParticles />
+      <div className="container mx-auto px-4 md:px-6 overflow-hidden ">
+        <div className="flex justify-center items-center">
+          <div className="w-3/4">
+            <BasicInfo />
+          </div>
         </div>
 
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-subtle">

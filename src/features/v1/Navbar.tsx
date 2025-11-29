@@ -1,3 +1,4 @@
+import { resumeUrl } from "@/data/links";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "../../components/ui/button";
@@ -10,11 +11,10 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { id: "home", label: "Home" },
-  { id: "about", label: "About" },
-  { id: "skills", label: "Skills" },
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
-  { id: "education", label: "Education" },
+  { id: "skills", label: "Skills" },
+  { id: "achievements", label: "Achievements" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -72,7 +72,7 @@ const Navbar = () => {
             href="#home"
             className="text-xl block md:text-2xl font-bold text-primary"
           >
-            Monirul<span className="text-foreground">Islam</span>
+            Monirul<span className="text-foreground"> Islam</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -90,7 +90,7 @@ const Navbar = () => {
             ))}
             <ThemeToggle />
             <a
-              href="https://drive.google.com/drive/folders/1sUU4Usy-CrZW4mfyxWrvr6ilQlpkWyw6?usp=sharing"
+              href={resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="ml-4"
@@ -129,7 +129,7 @@ const Navbar = () => {
                 </button>
               ))}
               <a
-                href="/resume.pdf"
+                href={resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="nav-item mt-2"

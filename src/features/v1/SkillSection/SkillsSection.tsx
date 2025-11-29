@@ -1,5 +1,4 @@
 import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Skill, skills } from "@/data/projects";
 import { Code, Database, Layout, Palette, Server, Wrench } from "lucide-react";
 
@@ -16,72 +15,53 @@ export const SkillsSection = () => {
     {}
   );
 
-  const categories = Object.keys(skillsByCategory);
+  const categories = Object.keys(skillsByCategory).slice(0, 4); // limit to 4 cards
 
-  // Map categories to icons
   const getCategoryIcon = (category: string) => {
     switch (category.toLowerCase()) {
       case "frontend":
-        return <Layout className="h-5 w-5" />;
+        return <Layout className="h-6 w-6" />;
       case "backend":
-        return <Server className="h-5 w-5" />;
+        return <Server className="h-6 w-6" />;
       case "database":
-        return <Database className="h-5 w-5" />;
+        return <Database className="h-6 w-6" />;
       case "programming languages":
-        return <Code className="h-5 w-5" />;
+        return <Code className="h-6 w-6" />;
       case "design":
-        return <Palette className="h-5 w-5" />;
+        return <Palette className="h-6 w-6" />;
       default:
-        return <Wrench className="h-5 w-5" />;
+        return <Wrench className="h-6 w-6" />;
     }
   };
 
   return (
-    <section id="skills" className="py-20 bg-background">
+    <section id="skills" className="py-20 bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="section-title">Skills</h2>
 
-        <div className="mt-12">
-          <Tabs defaultValue={categories[0]} className="w-full">
-            <TabsList className="mb-6 flex justify-center sm:gap-2">
-              {categories.map((category) => (
-                <TabsTrigger
-                  key={category}
-                  value={category}
-                  className="flex items-center gap-0 sm:gap-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
-                >
-                  <span className="hidden sm:block">
-                    {getCategoryIcon(category)}
-                  </span>
-                  {category}
-                </TabsTrigger>
-              ))}
-            </TabsList>
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+          {categories.map((category) => (
+            <div
+              key={category}
+              className="bg-card rounded-xl p-6 shadow-lg border border-border hover:shadow-xl transition-all"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                {getCategoryIcon(category)}
+                <h3 className="text-xl font-semibold capitalize">{category}</h3>
+              </div>
 
-            {categories.map((category) => (
-              <TabsContent
-                key={category}
-                value={category}
-                className="space-y-4"
-              >
-                <div className="bg-card rounded-xl p-8 shadow-lg border border-border">
-                  <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                    {skillsByCategory[category].map((skill) => (
-                      <div
-                        key={skill.id}
-                        className="flex flex-col items-center p-4 bg-muted rounded-lg hover:shadow-md transition-all"
-                      >
-                        <span className="font-medium text-lg mb-2">
-                          {skill.name}
-                        </span>
-                        <Badge variant="secondary">{skill.level}</Badge>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </TabsContent>
-            ))}
-          </Tabs>
+              <div className="flex flex-wrap gap-3">
+                {skillsByCategory[category].map((skill) => (
+                  <Badge
+                    key={skill.id}
+                    className="p-2 rounded-sm text-sm hover:cursor-pointer transition-all"
+                  >
+                    {skill.name}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -66,7 +66,7 @@ const ContactSection = () => {
                     href="mailto:monirul@example.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    mr.monirul.dev@gmail.com
+                    mmislam027@gmail.com
                   </a>
                 </div>
               </div>

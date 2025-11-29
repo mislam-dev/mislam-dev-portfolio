@@ -1,4 +1,4 @@
-import { AboutSection } from "./AboutSection";
+// import { AboutSection } from "./AboutSection";
 import { default as AchievementsSection } from "./AchievementsSection";
 import { default as CertificationsSection } from "./CertificationsSection";
 import { default as ContactSection } from "./ContactSection";
@@ -16,13 +16,12 @@ export const Version1 = () => {
       <Navbar />
       <main className="flex-grow">
         <HeroSection />
-        <AboutSection />
-        <SkillsSection />
         <ExperienceSection />
         <ProjectsSection />
+        <SkillsSection />
         <EducationSection />
-        <CertificationsSection />
         <AchievementsSection />
+        <CertificationsSection />
         <ContactSection />
       </main>
       <Footer />

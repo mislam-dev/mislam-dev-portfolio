@@ -29,7 +29,7 @@ const AchievementsSection = () => {
           className={cn(
             "mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
             {
-              "lg:grid-cols-3": achievements.length === 2,
+              "lg:grid-cols-3": achievements.length > 4,
             }
           )}
         >
@@ -40,7 +40,7 @@ const AchievementsSection = () => {
             >
               <CardContent className="pt-6 pb-6 px-4 flex flex-col items-center">
                 <div className="mb-4 rounded-full bg-primary/10 p-4">
-                  {getIcon(achievement.icon)}
+                  {achievement.icon}
                 </div>
 
                 <h3 className="text-xl font-bold mb-2">{achievement.title}</h3>
