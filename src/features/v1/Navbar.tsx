@@ -72,7 +72,7 @@ const Navbar = () => {
             href="#home"
             className="text-xl block md:text-2xl font-bold text-primary"
           >
-            Monirul<span className="text-foreground"> Islam</span>
+            {`<`}Monirul<span className="text-foreground"> Islam</span> {"/>"}
           </a>
 
           {/* Desktop Navigation */}
@@ -88,6 +88,8 @@ const Navbar = () => {
                 {item.label}
               </button>
             ))}
+          </nav>
+          <div className="flex items-center">
             <ThemeToggle />
             <a
               href={resumeUrl}
@@ -97,8 +99,7 @@ const Navbar = () => {
             >
               <Button>Resume</Button>
             </a>
-          </nav>
-
+          </div>
           {/* Mobile Navigation Toggle */}
           <div className="md:hidden flex  space-x-2">
             <ThemeToggle />
