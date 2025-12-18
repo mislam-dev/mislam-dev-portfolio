@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { education } from "@/data/projects";
+import { education } from "@/data/data";
 import { CalendarDays, GraduationCap } from "lucide-react";
 
 const EducationSection = () => {

@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { Skill, skills } from "@/data/projects";
+import { Skill, skills } from "@/data/data";
 import { Code, Database, Layout, Palette, Server, Wrench } from "lucide-react";
 
 export const SkillsSection = () => {

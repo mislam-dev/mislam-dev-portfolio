@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { projects } from "@/data/projects";
+import { projects } from "@/data/data";
 import { ExternalLink } from "lucide-react";
 
 // 10. Project

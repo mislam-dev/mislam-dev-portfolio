@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { achievements } from "@/data/projects";
+import { achievements } from "@/data/data";
 import { Award, Star, Target, Trophy } from "lucide-react";
 // 8. Achievements
 export const Achievements = () => {

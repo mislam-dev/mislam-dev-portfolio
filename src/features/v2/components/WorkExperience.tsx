@@ -1,4 +1,4 @@
-import { experiences } from "@/data/projects";
+import { experiences } from "@/data/data";
 // 9. Work Experience
 export const WorkExperience = () => (
   <div className="w-full h-full overflow-hidden overflow-y-auto scrollbar-hide hover:scrollbar-hover">

@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { certifications } from "@/data/projects";
+import { certifications } from "@/data/data";
 import { Award, Calendar, ExternalLink } from "lucide-react";
 
 const CertificationsSection = () => {

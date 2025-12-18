@@ -7,12 +7,12 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="section-title">Projects</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
           {projects.map((project) => (
             <div key={project.id} className="project-card">
-              <div className="relative hidden aspect-video w-full overflow-hidden">
+              <div className="relative aspect-video w-full h-60 overflow-hidden">
                 <img
-                  src={project.image}
+                  src={project.images.cover}
                   alt={project.title}
                   className="w-full h-full object-cover"
                 />
@@ -22,11 +22,11 @@ const ProjectsSection = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="text-muted-foreground mb-4">
-                  {project.description}
+                  {project.short_descriptions}
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.map((tech, index) => (
+                  {project.tags.map((tech, index) => (
                     <Badge key={index} variant="secondary">
                       {tech}
                     </Badge>
@@ -37,7 +37,7 @@ const ProjectsSection = () => {
                   {project.links.map((linkItem, idx) => (
                     <>
                       <a
-                        href={linkItem.value}
+                        href={linkItem.label}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex  items-center text-primary transition-colors"

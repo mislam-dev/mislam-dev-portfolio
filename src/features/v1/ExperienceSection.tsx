@@ -1,4 +1,4 @@
-import { experiences } from "@/data/projects";
+import { experiences } from "@/data/data";
 import { CheckCircle2 } from "lucide-react";
 
 const ExperienceSection = () => {

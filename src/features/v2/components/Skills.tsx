@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { skills } from "@/data/projects";
+import { skills } from "@/data/data";
 
 // 6. Skills
 export const Skills = () => (

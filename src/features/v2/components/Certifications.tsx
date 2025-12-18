@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { certifications } from "@/data/projects";
+import { certifications } from "@/data/data";
 import { ExternalLink } from "lucide-react";
 // 4. Certifications
 export const Certifications = () => {
