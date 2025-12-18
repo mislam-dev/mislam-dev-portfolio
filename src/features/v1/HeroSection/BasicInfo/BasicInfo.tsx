@@ -26,13 +26,10 @@ export const BasicInfo = () => {
         className="text-lg text-muted-foreground w-3/4 mx-auto  animate-fade-in"
         style={{ animationDelay: "0.8s" }}
       >
-        I am front-end focused full-stack developer with more than 3 years of
-        experience in building performant, scalable, and user centric web
-        applications. Proficient in React, Next.js, TypeScript, Node.js, and
-        Express. Experienced in shipping production-ready apps with
-        authentication systems, CI/CD automation, and microservice integrations.
-        Additionally, I have solved 190+ problems across LeetCode, HackerRank,
-        Codeforces, and similar platforms.
+        Full-stack developer with 3.5+ years of experience specializing in
+        high-performance React/Next.js applications and Node.js microservices.
+        Proven track record of shipping production-ready, CI/CD-integrated
+        systems and a strong foundation in algorithmic problem-solving.
       </p>
 
       <div
