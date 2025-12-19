@@ -1,53 +1,99 @@
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
-import { certifications } from "@/data/data";
-import { Award, Calendar, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { type Certification, certifications } from "@/data/certificates";
 
+import { Calendar, CheckCircle2, ExternalLink } from "lucide-react";
+
+interface Props {
+  cert: Certification;
+}
+export function CertificationCard({ cert }: Props) {
+  return (
+    <Card className="group flex flex-col overflow-hidden border-muted/60 transition-all hover:shadow-md">
+      {/* Image Section */}
+      <div className="relative aspect-video w-full overflow-hidden bg-muted">
+        <img
+          src={cert.imageUrl}
+          alt={cert.title}
+          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+        <div className="absolute top-2 right-2">
+          <Badge className="bg-background/80 text-foreground backdrop-blur-md border-none shadow-sm">
+            {cert.category}
+          </Badge>
+        </div>
+      </div>
+
+      {/* Header */}
+      <CardHeader className="p-4 pb-2">
+        <div className="flex items-center gap-2 mb-1">
+          <CheckCircle2 className="h-4 w-4 text-blue-500" />
+          <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+            {cert.issuer}
+          </span>
+        </div>
+        <CardTitle className="text-lg font-bold leading-tight line-clamp-1">
+          {cert.title}
+        </CardTitle>
+      </CardHeader>
+
+      {/* Body */}
+      <CardContent className="p-4 pt-0 flex-grow">
+        <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
+          {cert.description}
+        </p>
+        <div className="flex flex-wrap gap-1.5">
+          {cert.tags.map((skill) => (
+            <Badge
+              key={skill}
+              variant="secondary"
+              className="text-[10px] px-2 py-0"
+            >
+              {skill}
+            </Badge>
+          ))}
+        </div>
+      </CardContent>
+
+      {/* Footer */}
+      <CardFooter className="p-4 pt-0 flex items-center justify-between border-t mt-4 bg-muted/5">
+        <div className="flex items-center gap-1.5 text-xs text-muted-foreground mt-3">
+          <Calendar className="h-3.5 w-3.5" />
+          <span>Issued {cert.issueDate}</span>
+        </div>
+        <Button
+          size="sm"
+          variant="ghost"
+          className="mt-3 h-8 text-xs gap-2"
+          asChild
+        >
+          <a
+            href={cert.credentialUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Verify <ExternalLink className="h-3 w-3" />
+          </a>
+        </Button>
+      </CardFooter>
+    </Card>
+  );
+}
 const CertificationsSection = () => {
   return (
     <section id="certifications" className="py-20 bg-muted">
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="section-title">Certifications</h2>
-
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((cert) => (
-            <Card
-              key={cert.id}
-              className="overflow-hidden hover:shadow-lg transition-all duration-300"
-            >
-              <CardContent className="p-0">
-                <div className="bg-primary/10 p-4 flex items-center">
-                  <Award className="h-10 w-10 text-primary mr-3" />
-                  <h3 className="text-xl font-bold line-clamp-2">
-                    {cert.title}
-                  </h3>
-                </div>
-
-                <div className="p-5">
-                  <div className="flex justify-between items-center mb-4">
-                    <Badge variant="outline" className="font-medium">
-                      {cert.issuer}
-                    </Badge>
-                    <div className="flex items-center text-muted-foreground text-sm">
-                      <Calendar className="h-3.5 w-3.5 mr-1" />
-                      <span>{cert.date}</span>
-                    </div>
-                  </div>
-
-                  {cert.credentialLink && (
-                    <a
-                      href={cert.credentialLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-primary hover:text-primary/80 mt-2 font-medium transition-colors"
-                    >
-                      <span>View Credential</span>
-                      <ExternalLink className="w-4 h-4 ml-1" />
-                    </a>
-                  )}
-                </div>
-              </CardContent>
-            </Card>
+            <CertificationCard key={cert.id} cert={cert} />
           ))}
         </div>
       </div>

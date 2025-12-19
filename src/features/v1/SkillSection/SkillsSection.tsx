@@ -47,7 +47,9 @@ export const SkillsSection = () => {
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           <div className="bg-card rounded-xl p-6 shadow-lg border border-border hover:shadow-xl transition-all">
             <div className="flex items-center gap-3 mb-4">
-              <h3 className="text-xl font-semibold capitalize">Frontend</h3>
+              <h3 className="text-xl font-semibold capitalize  w-full text-center">
+                Frontend
+              </h3>
             </div>
 
             <div className="flex flex-wrap gap-3 justify-evenly">
@@ -65,7 +67,9 @@ export const SkillsSection = () => {
           </div>
           <div className="bg-card rounded-xl p-6 shadow-lg border border-border hover:shadow-xl transition-all">
             <div className="flex items-center gap-3 mb-4">
-              <h3 className="text-xl font-semibold capitalize">Backend</h3>
+              <h3 className="text-xl font-semibold capitalize w-full text-center">
+                Backend
+              </h3>
             </div>
 
             <div className="flex flex-wrap gap-3 justify-evenly">
@@ -83,7 +87,9 @@ export const SkillsSection = () => {
           </div>
           <div className="bg-card rounded-xl p-6 shadow-lg border border-border hover:shadow-xl transition-all">
             <div className="flex items-center gap-3 mb-4">
-              <h3 className="text-xl font-semibold capitalize">Database</h3>
+              <h3 className="text-xl font-semibold capitalize w-full text-center">
+                Database
+              </h3>
             </div>
 
             <div className="flex flex-wrap gap-3 justify-evenly">
@@ -101,7 +107,9 @@ export const SkillsSection = () => {
           </div>
           <div className="bg-card rounded-xl p-6 shadow-lg border border-border hover:shadow-xl transition-all">
             <div className="flex items-center gap-3 mb-4">
-              <h3 className="text-xl font-semibold capitalize">Tools</h3>
+              <h3 className="text-xl font-semibold capitalize w-full text-center">
+                Tools
+              </h3>
             </div>
 
             <div className="flex flex-wrap gap-3 justify-evenly">
