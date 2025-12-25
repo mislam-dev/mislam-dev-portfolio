@@ -1,4 +1,5 @@
 import { PersonStanding, ShieldCheck, Users } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 import { v4 } from "uuid";
 
@@ -369,11 +370,14 @@ export const achievements: {
     year: "2023",
     icon: (
       <div className="w-full h-12">
-        <img
+        <Image
+          alt=""
           src={
             "https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
           }
           className="w-full h-full object-cover"
+          height={100}
+          width={100}
         />
       </div>
     ),
@@ -393,10 +397,13 @@ export const achievements: {
       "Manage a tech-focused YouTube channel sharing practical tips, tricks, and tutorials.",
     icon: (
       <div className="w-full h-12">
-        <img
+        <Image
           src={
             "https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
           }
+          alt=""
+          height={100}
+          width={100}
           className="w-full h-full object-cover"
         />
       </div>

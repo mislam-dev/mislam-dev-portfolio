@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 
 import { Education, educations } from "@/data/educations";
 import { BookOpen, Calendar, Trophy } from "lucide-react";
+import Image from "next/image";
 
 const EducationSection = () => {
   return (
@@ -32,10 +33,12 @@ export function EducationCard({ education }: EducationCardProps) {
       <div className="flex flex-col md:flex-row ">
         {/* LEFT SECTION: Image */}
         <div className="relative w-full md:w-1/3 lg:w-1/3 bg-muted">
-          <img
+          <Image
             src={education.imageUrl}
             alt={education.institute}
-            className="h-full w-full object-cover min-h-[200px] md:min-h-full"
+            width={800}
+            height={400}
+            className="h-full w-full object-cover min-h-50 md:min-h-full"
           />
           <div className="absolute top-4 left-4 md:hidden">
             <Badge className="bg-primary">{education.timeRange}</Badge>
@@ -106,7 +109,9 @@ export function EducationCard({ education }: EducationCardProps) {
                   Description
                 </h4>
                 <p className="text-sm text-muted-foreground leading-relaxed italic">
-                  "{education.description}"
+                  {`"`}
+                  {education.description}
+                  {`"`}
                 </p>
               </div>
             </div>

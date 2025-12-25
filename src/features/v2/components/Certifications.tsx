@@ -3,7 +3,6 @@ import { certifications } from "@/data/data";
 import { ExternalLink } from "lucide-react";
 // 4. Certifications
 export const Certifications = () => {
-  const openLinks = () => {};
   return (
     <div className="w-full h-full overflow-hidden overflow-y-auto scrollbar-hide scrollbar-hover">
       <div className="lg:pl-4 lg:mb-3 pr-2.5 lg:pr-0">

@@ -5,7 +5,7 @@ export const WorkExperience = () => (
     <div className="lg:pl-4 lg:mb-3 pr-2.5 lg:pr-0">
       <h4 className="text-xl mb-2">Work Experiences</h4>
       <div className="space-y-3">
-        {experiences.map((experience, index) => (
+        {experiences.map((experience) => (
           <div key={experience.id} className="relative bg-primary/10">
             <div className=" rounded-xl p-3 shadow-md">
               <div className="">

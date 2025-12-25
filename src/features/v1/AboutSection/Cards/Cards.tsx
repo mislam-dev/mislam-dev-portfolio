@@ -1,4 +1,5 @@
 import { Award, BookOpen, CodeXml, Users } from "lucide-react";
+import { v4 } from "uuid";
 import Card, { CardProps } from "./Card";
 export const Cards = () => {
   return (
@@ -9,7 +10,7 @@ export const Cards = () => {
             description={item.description}
             icon={item.icon}
             title={item.title}
-            key={Math.random()}
+            key={v4()}
           />
         ))}
       </div>

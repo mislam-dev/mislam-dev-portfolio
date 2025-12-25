@@ -1,16 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Link, Linkedin, Mail } from "lucide-react";
 
-type SocialLink = {
-  href: string;
-  icon: React.ReactNode;
-  label: string;
-};
-
-interface SocialLinksProps {
-  links: SocialLink[];
-}
-
 const links = [
   {
     href: "https://github.com/mislam-dev",

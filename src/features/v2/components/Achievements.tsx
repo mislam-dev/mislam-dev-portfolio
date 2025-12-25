@@ -1,22 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { achievements } from "@/data/data";
-import { Award, Star, Target, Trophy } from "lucide-react";
 // 8. Achievements
 export const Achievements = () => {
-  const getIcon = (icon: string) => {
-    switch (icon) {
-      case "trophy":
-        return <Trophy className="h-12 w-12 text-primary" />;
-      case "star":
-        return <Star className="h-12 w-12 text-primary" />;
-      case "target":
-        return <Target className="h-12 w-12 text-primary" />;
-      case "award":
-        return <Award className="h-12 w-12 text-primary" />;
-      default:
-        return <Trophy className="h-12 w-12 text-primary" />;
-    }
-  };
   return (
     <div className="w-full h-full overflow-hidden scrollbar-hide scrollbar-hover">
       <div className="mb-3 mt-2 pr-2.5 lg:pr-0">

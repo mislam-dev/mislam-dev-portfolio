@@ -1,3 +1,4 @@
+"use client";
 import { resumeUrl } from "@/data/links";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
