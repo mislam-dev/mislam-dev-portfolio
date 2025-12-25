@@ -14,7 +14,11 @@ export const roktoChai: Project = {
     { label: "Source Code", link: "https://github.com/mislam-dev/roktochai" },
   ],
   images: {
-    cover: "/images/roktochai-cover.png",
+    cover: {
+      src: '"/images/roktochai-cover.png"',
+      height: 300,
+      width: 300,
+    },
     showcases: [
       "/images/roktochai-map.png",
       "/images/roktochai-donor-list.png",

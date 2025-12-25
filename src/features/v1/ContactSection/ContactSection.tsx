@@ -11,7 +11,7 @@ export const ContactSection = () => {
           <div>
             <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
             <p className="text-lg text-muted-foreground mb-8">
-              I'm always open to discussing new projects, opportunities, or
+              {`I'm`} always open to discussing new projects, opportunities, or
               partnerships. Feel free to reach out to me using the contact form
               or through any of the channels below.
             </p>

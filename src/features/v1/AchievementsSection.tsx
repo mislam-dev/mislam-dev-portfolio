@@ -1,25 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { achievements } from "@/data/data";
 import { cn } from "@/lib/utils";
-import { Award, Star, Target, Trophy } from "lucide-react";
 
 const AchievementsSection = () => {
-  // Function to return the appropriate icon component
-  const getIcon = (icon: string) => {
-    switch (icon) {
-      case "trophy":
-        return <Trophy className="h-12 w-12 text-primary" />;
-      case "star":
-        return <Star className="h-12 w-12 text-primary" />;
-      case "target":
-        return <Target className="h-12 w-12 text-primary" />;
-      case "award":
-        return <Award className="h-12 w-12 text-primary" />;
-      default:
-        return <Trophy className="h-12 w-12 text-primary" />;
-    }
-  };
-
   return (
     <section id="achievements" className="py-20">
       <div className="container mx-auto px-4 md:px-6">

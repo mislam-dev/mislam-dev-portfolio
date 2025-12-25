@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { v4 } from "uuid";
 
 export interface Skill {
@@ -14,7 +15,7 @@ export const frontendSkills: Skill[] = [
     name: "JavaScript",
     icon: (
       <>
-        <img
+        <Image
           src={`https://skillicons.dev/icons?i=js`}
           width="48"
           height="48"
@@ -28,7 +29,7 @@ export const frontendSkills: Skill[] = [
     name: "TypeScript",
     icon: (
       <>
-        <img
+        <Image
           src={`https://skillicons.dev/icons?i=ts`}
           width="48"
           height="48"
@@ -42,7 +43,7 @@ export const frontendSkills: Skill[] = [
     name: "HTML",
     icon: (
       <>
-        <img
+        <Image
           src={`https://skillicons.dev/icons?i=html`}
           width="48"
           height="48"
@@ -56,7 +57,7 @@ export const frontendSkills: Skill[] = [
     name: "CSS",
     icon: (
       <>
-        <img
+        <Image
           src={`https://skillicons.dev/icons?i=css`}
           width="48"
           height="48"
@@ -70,7 +71,7 @@ export const frontendSkills: Skill[] = [
     name: "React",
     icon: (
       <>
-        <img
+        <Image
           src={`https://skillicons.dev/icons?i=react`}
           width="48"
           height="48"
@@ -84,7 +85,7 @@ export const frontendSkills: Skill[] = [
     name: "Next.js",
     icon: (
       <>
-        <img
+        <Image
           src={`https://skillicons.dev/icons?i=next`}
           width="48"
           height="48"
@@ -98,7 +99,7 @@ export const frontendSkills: Skill[] = [
     name: "Tailwind",
     icon: (
       <>
-        <img
+        <Image
           src={`https://skillicons.dev/icons?i=tailwind`}
           width="48"
           height="48"
@@ -112,7 +113,7 @@ export const frontendSkills: Skill[] = [
     name: "React Router",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=reactrouter`}
           width="48"
           height="48"
@@ -126,7 +127,7 @@ export const frontendSkills: Skill[] = [
     name: "Hook Form",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=git`}
           width="48"
           height="48"
@@ -140,7 +141,7 @@ export const frontendSkills: Skill[] = [
     name: "Zod",
     icon: (
       <>
-        <img
+        <Image
           src={`https://skillicons.dev/icons?i=html`}
           width="48"
           height="48"
@@ -154,7 +155,7 @@ export const frontendSkills: Skill[] = [
     name: "ShadCN",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=mongodb`}
           width="48"
           height="48"
@@ -168,7 +169,7 @@ export const frontendSkills: Skill[] = [
     name: "Redux",
     icon: (
       <>
-        <img
+        <Image
           src={`https://skillicons.dev/icons?i=redux`}
           width="48"
           height="48"
@@ -182,7 +183,7 @@ export const frontendSkills: Skill[] = [
     name: "Zustand",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=zustand`}
           width="48"
           height="48"
@@ -196,7 +197,7 @@ export const frontendSkills: Skill[] = [
     name: "React Query",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=reactquery`}
           width="48"
           height="48"
@@ -210,7 +211,7 @@ export const frontendSkills: Skill[] = [
     name: "API",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=api`}
           width="48"
           height="48"
@@ -227,7 +228,7 @@ export const backendSkills: Skill[] = [
     name: "Node.js",
     icon: (
       <>
-        <img
+        <Image
           src={`https://skillicons.dev/icons?i=nodejs`}
           width="48"
           height="48"
@@ -241,7 +242,7 @@ export const backendSkills: Skill[] = [
     name: "ExpressJs",
     icon: (
       <>
-        <img
+        <Image
           src={`https://skillicons.dev/icons?i=express`}
           width="48"
           height="48"
@@ -255,7 +256,7 @@ export const backendSkills: Skill[] = [
     name: "NestJs",
     icon: (
       <>
-        <img
+        <Image
           src={`https://skillicons.dev/icons?i=nest`}
           width="48"
           height="48"
@@ -269,7 +270,7 @@ export const backendSkills: Skill[] = [
     name: "Python",
     icon: (
       <>
-        <img
+        <Image
           src={`https://skillicons.dev/icons?i=python`}
           width="48"
           height="48"
@@ -283,7 +284,7 @@ export const backendSkills: Skill[] = [
     name: "Fastapi",
     icon: (
       <>
-        <img
+        <Image
           src={`https://skillicons.dev/icons?i=fastapi`}
           width="48"
           height="48"
@@ -297,7 +298,7 @@ export const backendSkills: Skill[] = [
     name: "REST API",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=api`}
           width="48"
           height="48"
@@ -311,7 +312,7 @@ export const backendSkills: Skill[] = [
     name: "TypeORM",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=typeorm`}
           width="48"
           height="48"
@@ -325,7 +326,7 @@ export const backendSkills: Skill[] = [
     name: "Prisma",
     icon: (
       <>
-        <img
+        <Image
           src={`https://skillicons.dev/icons?i=prisma`}
           width="48"
           height="48"
@@ -339,7 +340,7 @@ export const backendSkills: Skill[] = [
     name: "Mongoose",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=mongoose`}
           width="48"
           height="48"
@@ -353,7 +354,7 @@ export const backendSkills: Skill[] = [
     name: "Drizzle",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=drizzle`}
           width="48"
           height="48"
@@ -367,7 +368,7 @@ export const backendSkills: Skill[] = [
     name: "RabbitMQ",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=rabbitmq`}
           width="48"
           height="48"
@@ -381,7 +382,7 @@ export const backendSkills: Skill[] = [
     name: "Authentication",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=authenticator`}
           width="48"
           height="48"
@@ -395,7 +396,7 @@ export const backendSkills: Skill[] = [
     name: "Authorization",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=authenticator`}
           width="48"
           height="48"
@@ -409,7 +410,7 @@ export const backendSkills: Skill[] = [
     name: "JWT",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=jwt`}
           width="48"
           height="48"
@@ -423,7 +424,7 @@ export const backendSkills: Skill[] = [
     name: "Zod",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=api`}
           width="48"
           height="48"
@@ -440,7 +441,7 @@ export const databaseSkills: Skill[] = [
     name: "Database Design",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=pint`}
           width="48"
           height="48"
@@ -454,7 +455,7 @@ export const databaseSkills: Skill[] = [
     name: "Database Management",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=rollupjs`}
           width="48"
           height="48"
@@ -468,7 +469,7 @@ export const databaseSkills: Skill[] = [
     name: "(No)SQL",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=mysql`}
           width="48"
           height="48"
@@ -482,7 +483,7 @@ export const databaseSkills: Skill[] = [
     name: "MongoDB",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=mongodb`}
           width="48"
           height="48"
@@ -496,7 +497,7 @@ export const databaseSkills: Skill[] = [
     name: "PostgreSQL",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=postgresql`}
           width="48"
           height="48"
@@ -510,7 +511,7 @@ export const databaseSkills: Skill[] = [
     name: "Redis",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=redis`}
           width="48"
           height="48"
@@ -524,7 +525,7 @@ export const databaseSkills: Skill[] = [
     name: "MySQL",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=mysql`}
           width="48"
           height="48"
@@ -538,7 +539,7 @@ export const databaseSkills: Skill[] = [
     name: "Firebase",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=firebase`}
           width="48"
           height="48"
@@ -552,7 +553,7 @@ export const databaseSkills: Skill[] = [
     name: "Supabase",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=supabase`}
           width="48"
           height="48"
@@ -566,7 +567,7 @@ export const databaseSkills: Skill[] = [
     name: "Appwrite",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=appwrite`}
           width="48"
           height="48"
@@ -583,7 +584,7 @@ export const toolSkills: Skill[] = [
     name: "Git",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=git`}
           width="48"
           height="48"
@@ -597,7 +598,7 @@ export const toolSkills: Skill[] = [
     name: "Docker",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=docker`}
           width="48"
           height="48"
@@ -611,7 +612,7 @@ export const toolSkills: Skill[] = [
     name: "CI/CD",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=githubactions`}
           width="48"
           height="48"
@@ -625,7 +626,7 @@ export const toolSkills: Skill[] = [
     name: "Nginx",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=nginx`}
           width="48"
           height="48"
@@ -639,7 +640,7 @@ export const toolSkills: Skill[] = [
     name: "VPS",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=cloudflare`}
           width="48"
           height="48"
@@ -653,7 +654,7 @@ export const toolSkills: Skill[] = [
     name: "Postman",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=postman`}
           width="48"
           height="48"
@@ -667,7 +668,7 @@ export const toolSkills: Skill[] = [
     name: "Linux",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=linux`}
           width="48"
           height="48"
@@ -681,7 +682,7 @@ export const toolSkills: Skill[] = [
     name: "Figma",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=figma`}
           width="48"
           height="48"
@@ -695,7 +696,7 @@ export const toolSkills: Skill[] = [
     name: "Microservices",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=apigateway`}
           width="48"
           height="48"
@@ -709,7 +710,7 @@ export const toolSkills: Skill[] = [
     name: "Swagger",
     icon: (
       <>
-        <img
+        <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=swagger`}
           width="48"
           height="48"

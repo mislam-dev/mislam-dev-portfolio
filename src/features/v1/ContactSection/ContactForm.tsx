@@ -2,9 +2,10 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
+
 import { Send } from "lucide-react";
 import React, { useState } from "react";
+import { toast } from "sonner";
 
 interface FormData {
   name: string;
@@ -13,7 +14,6 @@ interface FormData {
 }
 
 const ContactForm = () => {
-  const { toast } = useToast();
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -35,10 +35,7 @@ const ContactForm = () => {
     // Simulate form submission
     setTimeout(() => {
       console.log("Form submitted:", formData);
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
-      });
+      toast("Thank you for your message. I'll get back to you soon.");
       setFormData({ name: "", email: "", message: "" });
       setIsSubmitting(false);
     }, 1000);

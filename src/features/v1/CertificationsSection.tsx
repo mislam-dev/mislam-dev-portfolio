@@ -46,7 +46,7 @@ export function CertificationCard({ cert }: Props) {
       </CardHeader>
 
       {/* Body */}
-      <CardContent className="p-4 pt-0 flex-grow">
+      <CardContent className="p-4 pt-0 grow">
         <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
           {cert.description}
         </p>

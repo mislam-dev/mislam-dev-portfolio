@@ -1,3 +1,4 @@
+import NextImage from "next/image";
 export const Image = () => {
   return (
     <div
@@ -5,8 +6,8 @@ export const Image = () => {
       style={{ animationDelay: "1s" }}
     >
       <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary/20 p-2">
-        <div className="w-full h-full rounded-full overflow-hidden bg-gradient-to-r from-primary/20 to-secondary/20">
-          <img
+        <div className="w-full h-full rounded-full overflow-hidden bg-linear-to-r from-primary/20 to-secondary/20">
+          <NextImage
             src="/lovable-uploads/3e1d3840-2036-46b8-a7fb-261be3a76a0f.png"
             alt="Monirul Islam"
             className="w-full h-full object-cover"

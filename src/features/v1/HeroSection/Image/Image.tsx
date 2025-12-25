@@ -1,14 +1,15 @@
+import NextImage from "next/image";
 import img from "./profile.png";
 
-export const Image = () => {
+export const ProfileImage = () => {
   return (
     <div
       className="relative aspect-square max-w-md mx-auto md:ml-auto animate-fade-in"
       style={{ animationDelay: "1s" }}
     >
       <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary/20 p-2">
-        <div className="w-full h-full rounded-full overflow-hidden bg-gradient-to-r from-primary/20 to-secondary/20">
-          <img
+        <div className="w-full h-full rounded-full overflow-hidden bg-linear-to-r from-primary/20 to-secondary/20">
+          <NextImage
             src={img}
             alt="Monirul Islam"
             className="w-full h-full object-cover"

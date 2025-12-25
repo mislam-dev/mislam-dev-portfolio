@@ -9,7 +9,7 @@ export const BasicInfo = () => {
           className="text-xl sm:text-2xl font-medium text-primary animate-fade-in"
           style={{ animationDelay: "0.2s" }}
         >
-          Hello, I'm
+          Hello, {`I'm`}
         </h2>
         <h1 className="animate-fade-in" style={{ animationDelay: "0.4s" }}>
           Monirul Islam

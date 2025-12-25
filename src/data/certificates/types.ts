@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export type Certification = {
   id: string;
   title: string;
@@ -6,7 +8,7 @@ export type Certification = {
   expiryDate?: string;
   category: string;
   description: string;
-  imageUrl: string;
+  imageUrl: StaticImageData;
   credentialUrl: string;
   tags: string[];
   status: "active" | "expired" | "processing";
