@@ -36,6 +36,8 @@ export function EducationCard({ education }: EducationCardProps) {
           <Image
             src={education.imageUrl}
             alt={education.institute}
+            width={800}
+            height={400}
             className="h-full w-full object-cover min-h-50 md:min-h-full"
           />
           <div className="absolute top-4 left-4 md:hidden">

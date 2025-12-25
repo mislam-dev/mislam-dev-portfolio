@@ -46,8 +46,8 @@ export default function RootLayout({
       <body
         className={`${fontSans.variable} ${fontHeading.variable} font-sans antialiased`}
       >
-        <Toaster />
         {children}
+        <Toaster />
       </body>
     </html>
   );
