@@ -17,7 +17,7 @@ interface Props {
 }
 export function CertificationCard({ cert }: Props) {
   return (
-    <Card className="group flex flex-col overflow-hidden border-muted/60 transition-all hover:shadow-md">
+    <Card className="group gap-3 flex flex-col overflow-hidden border-muted/60 transition-all hover:shadow-md py-0">
       {/* Image Section */}
       <div className="relative aspect-video w-full overflow-hidden bg-muted">
         <Image
@@ -33,7 +33,7 @@ export function CertificationCard({ cert }: Props) {
       </div>
 
       {/* Header */}
-      <CardHeader className="p-4 pb-2">
+      <CardHeader className="px-4 ">
         <div className="flex items-center gap-2 mb-1">
           <CheckCircle2 className="h-4 w-4 text-blue-500" />
           <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
@@ -46,7 +46,7 @@ export function CertificationCard({ cert }: Props) {
       </CardHeader>
 
       {/* Body */}
-      <CardContent className="p-4 pt-0 grow">
+      <CardContent className="px-4 grow">
         <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
           {cert.description}
         </p>
@@ -64,15 +64,15 @@ export function CertificationCard({ cert }: Props) {
       </CardContent>
 
       {/* Footer */}
-      <CardFooter className="p-4 pt-0 flex items-center justify-between border-t mt-4 bg-muted/5">
-        <div className="flex items-center gap-1.5 text-xs text-muted-foreground mt-3">
+      <CardFooter className="p-4  mt-3 flex items-center justify-between border-t-2 bg-muted/5">
+        <div className="flex items-center gap-1.5 text-xs text-muted-foreground  ">
           <Calendar className="h-3.5 w-3.5" />
           <span>Issued {cert.issueDate}</span>
         </div>
         <Button
           size="sm"
           variant="ghost"
-          className="mt-3 h-8 text-xs gap-2"
+          className=" h-8 text-xs gap-2"
           asChild
         >
           <a

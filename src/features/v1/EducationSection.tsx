@@ -29,7 +29,7 @@ interface EducationCardProps {
 
 export function EducationCard({ education }: EducationCardProps) {
   return (
-    <Card className="overflow-hidden border-muted/60 transition-all hover:shadow-md">
+    <Card className="overflow-hidden py-0 border-muted/60 transition-all hover:shadow-md">
       <div className="flex flex-col md:flex-row ">
         {/* LEFT SECTION: Image */}
         <div className="relative w-full md:w-1/3 lg:w-1/3 bg-muted">
