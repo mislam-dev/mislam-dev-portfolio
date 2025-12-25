@@ -1,8 +1,7 @@
-"use client";
 // import { AboutSection } from "./AboutSection";
 import { default as AchievementsSection } from "./AchievementsSection";
 import { default as CertificationsSection } from "./CertificationsSection";
-import { default as ContactSection } from "./ContactSection";
+import { ContactSection } from "./ContactSection";
 import { default as EducationSection } from "./EducationSection";
 import { default as ExperienceSection } from "./ExperienceSection";
 import { default as Footer } from "./Footer";

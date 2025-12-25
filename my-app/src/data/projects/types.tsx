@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface Project {
   id: string;
   title: string;
@@ -9,7 +11,7 @@ export interface Project {
     label: string;
   }[];
   images: {
-    cover: string;
+    cover: StaticImageData;
     showcases: string[];
   };
 }

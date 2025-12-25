@@ -10,6 +10,7 @@ import {
 import { type Certification, certifications } from "@/data/certificates";
 
 import { Calendar, CheckCircle2, ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 interface Props {
   cert: Certification;
@@ -19,7 +20,7 @@ export function CertificationCard({ cert }: Props) {
     <Card className="group flex flex-col overflow-hidden border-muted/60 transition-all hover:shadow-md">
       {/* Image Section */}
       <div className="relative aspect-video w-full overflow-hidden bg-muted">
-        <img
+        <Image
           src={cert.imageUrl}
           alt={cert.title}
           className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import devDoTwoIcon from "./dev-to.png";
 import githubIcon from "./github.png";
 import gmailIcon from "./gmail.png";
@@ -17,39 +18,39 @@ export const SOCIAL_LINKS: SocialLink[] = [
     href: "https://github.com/mislam-dev",
     icon: (
       <span className="bg-white block rounded-full">
-        <img src={githubIcon} />
+        <Image src={githubIcon} alt="github" />
       </span>
     ),
     label: "Github",
   },
   {
     href: "https://linkedin.com/in/mislam-dev",
-    icon: <img src={linkedinIcon} />,
+    icon: <Image src={linkedinIcon} alt="" />,
     label: "LinkedIn",
   },
   {
     href: "mailto:mmislam027@gmail.com",
-    icon: <img src={gmailIcon} />,
+    icon: <Image src={gmailIcon} alt="" />,
     label: "Email",
   },
   {
     href: "https://leetcode.com/u/mislamdev",
-    icon: <img src={leetCodeIcon} />,
+    icon: <Image src={leetCodeIcon} alt="" />,
     label: "LeetCode",
   },
   {
     href: "https://www.hackerrank.com/profile/codemonkmi",
-    icon: <img src={hackerRankIcon} />,
+    icon: <Image src={hackerRankIcon} alt="" />,
     label: "HackerRank",
   },
   {
     href: "https://dev.to/mislam-dev",
-    icon: <img src={devDoTwoIcon} />,
+    icon: <Image src={devDoTwoIcon} alt="" />,
     label: "Dev.to",
   },
   {
     href: "https://www.youtube.com/@mislam-dev",
-    icon: <img src={youtubeIcon} />,
+    icon: <Image src={youtubeIcon} alt="" />,
     label: "Youtube",
   },
 ];
