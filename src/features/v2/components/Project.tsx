@@ -12,7 +12,7 @@ export const Project = () => (
         {projects.map((project) => (
           <Card
             key={project.id}
-            className="overflow-hidden hover:shadow-lg transition-all duration-300"
+            className="overflow-hidden hover:shadow-lg transition-all duration-300 py-0"
           >
             <CardContent className="p-0">
               <div className="bg-primary/10 p-2">
