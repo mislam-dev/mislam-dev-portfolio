@@ -1,1 +1,1 @@
-export { earthScan as earthScan_project } from "./earthscan.tsx";
+export { earthScan as earthScan_project } from "./earthscan";

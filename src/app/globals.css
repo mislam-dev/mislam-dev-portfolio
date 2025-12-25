@@ -4,9 +4,7 @@
 /* 1. Plugins */
 @plugin "tailwindcss-animate";
 
-/* 2. Fonts */
-
-/* 3. Theme Configuration (Formerly tailwind.config.ts) */
+/* 2. Theme Configuration */
 @theme {
   /* Fonts */
   --font-sans: "Inter", sans-serif;
@@ -17,7 +15,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
 
-  /* Color Mappings (Links standard names to your CSS variables) */
+  /* Color Mappings */
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
@@ -48,7 +46,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* Your Custom Static Colors */
+  /* Custom Static Colors */
   --color-navy: #0f172a;
   --color-teal: #0ea5e9;
   --color-purpleAccent: #8b5cf6;
@@ -105,8 +103,7 @@
   }
 }
 
-/* 4. Utility Definitions */
-/* Replicates 'container: { center: true, padding: "2rem" }' */
+/* 3. Utility Definitions */
 @utility container {
   margin-inline: auto;
   padding-inline: 2rem;
@@ -115,7 +112,7 @@
   }
 }
 
-/* 5. CSS Variables (Updated to include hsl() wrapper for v4 compatibility) */
+/* 4. CSS Variables */
 :root {
   --background: hsl(222 47% 12%);
   --foreground: hsl(210 40% 98%);
@@ -187,7 +184,7 @@
   --ring: hsl(222 84% 48%);
 }
 
-/* 6. Base Styles */
+/* 5. Base Styles */
 @layer base {
   * {
     @apply border-border;
@@ -231,7 +228,6 @@
     @apply py-16 md:py-24;
   }
 
-  /* App.css Content Merged Here */
   #root {
     max-width: 1280px;
     margin: 0 auto;
@@ -267,7 +263,7 @@
   }
 }
 
-/* 7. Components */
+/* 6. Components */
 @layer components {
   .btn-primary {
     @apply bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-md transition-colors;
@@ -318,7 +314,7 @@
   }
 }
 
-/* 8. Utilities (Scrollbars) */
+/* 7. Utilities */
 @layer utilities {
   .scrollbar-hide {
     -ms-overflow-style: none; /* IE & Edge */
@@ -341,7 +337,7 @@
   }
 
   .scrollbar-hover:hover::-webkit-scrollbar {
-    width: 0.25rem; /* w-1 equivalent */
+    width: 0.25rem;
   }
   .scrollbar-hover:hover::-webkit-scrollbar-track {
     background-color: transparent;
@@ -352,7 +348,6 @@
   }
 }
 
-/* Default Scrollbar (Global) */
 ::-webkit-scrollbar {
   width: 8px;
 }

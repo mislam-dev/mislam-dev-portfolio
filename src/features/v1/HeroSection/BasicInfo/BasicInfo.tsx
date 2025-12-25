@@ -1,5 +1,6 @@
+import { Button } from "@/components/ui/button";
 import { resumeUrl, SOCIAL_LINKS } from "@/data/links";
-import { Button } from "../../../../components/ui/button";
+import { v4 } from "uuid";
 
 export const BasicInfo = () => {
   return (
@@ -9,7 +10,7 @@ export const BasicInfo = () => {
           className="text-xl sm:text-2xl font-medium text-primary animate-fade-in"
           style={{ animationDelay: "0.2s" }}
         >
-          Hello, I'm
+          Hello, {`I'm`}
         </h2>
         <h1 className="animate-fade-in" style={{ animationDelay: "0.4s" }}>
           Monirul Islam
@@ -56,7 +57,7 @@ export const BasicInfo = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground/80 hover:text-primary transition-colors duration-200"
-            key={Math.random()}
+            key={v4()}
           >
             {link.icon}
           </a>

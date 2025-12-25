@@ -37,7 +37,7 @@ export const experiences: Experience[] = [
     role: "Software Developer",
     company: "DK AI Labs",
     duration: "Feb 2025 - Aug 2025",
-    location: "On-site",
+    location: "Remote",
     description: [
       "Designed and developed a cloud service platform akin to AWS, with TypeScript, ReactJs, and TailwindCSS.",
       "Built a Visual Flow App with React Flow, which enabled users to construct logical data pipelines with dynamic nodes.",
@@ -59,7 +59,7 @@ export const experiences: Experience[] = [
     role: "Fullstack Web Developer",
     company: "DK AI Labs",
     duration: "Apr 2023 - Dec 2024",
-    location: "On-site",
+    location: "Remote",
     description: [
       "Developed and deployed 5+ production-grade software using Next.js, Strapi, Tailwind CSS, and Shadcn UI.",
       "Converted complex Figma designs into pixel-perfect UIs with optimized rendering for performance and SEO (e.g., Earthscan.io).",

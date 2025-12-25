@@ -1,4 +1,6 @@
 import { projects } from "@/data/projects";
+import Image from "next/image";
+import { Fragment } from "react";
 import { Badge } from "../../components/ui/badge";
 
 const ProjectsSection = () => {
@@ -7,11 +9,11 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="section-title">Projects</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
           {projects.map((project) => (
             <div key={project.id} className="project-card">
               <div className="relative aspect-video w-full h-60 overflow-hidden">
-                <img
+                <Image
                   src={project.images.cover}
                   alt={project.title}
                   className="w-full h-full object-cover"
@@ -35,7 +37,7 @@ const ProjectsSection = () => {
 
                 <div className="flex space-x-4">
                   {project.links.map((linkItem, idx) => (
-                    <>
+                    <Fragment key={idx}>
                       <a
                         href={linkItem.label}
                         target="_blank"
@@ -45,7 +47,7 @@ const ProjectsSection = () => {
                         <span>{linkItem.label}</span>
                       </a>
                       {idx < project.links.length - 1 && <span>|</span>}
-                    </>
+                    </Fragment>
                   ))}
                 </div>
               </div>
