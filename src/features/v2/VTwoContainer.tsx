@@ -13,8 +13,8 @@ import {
 
 export const VTwoContainer = () => {
   return (
-    <div className="bg-background lg:h-screen  py-5 overflow-y-auto">
-      <div className="pl-3   md:container mx-auto h-full overflow-y-auto">
+    <div className="bg-background lg:h-screen lg:overflow-hidden  py-5 overflow-y-auto">
+      <div className="pl-3 md:container mx-auto h-full overflow-y-auto">
         <div className=" h-full w-full rounded-lg overflow-y-auto overflow-x-hidden flex justify-center items-center">
           <div className="bg-transparent w-full h-full grid grid-cols-1 lg:grid-cols-11 lg:grid-rows-7 lg:gap-0">
             <div className="lg:row-start-1 lg:row-end-2 auto-rows-min lg:col-start-1 lg:col-end-12 order-1 ">

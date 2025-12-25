@@ -12,7 +12,7 @@ export const Certifications = () => {
           {certifications.map((cert) => (
             <Card
               key={cert.id}
-              className="overflow-hidden hover:shadow-lg transition-all duration-300 bg-primary/10"
+              className="overflow-hidden hover:shadow-lg transition-all duration-300 bg-primary/10 py-0"
             >
               <CardContent className="p-0">
                 <div className="p-2">

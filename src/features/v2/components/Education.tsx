@@ -11,7 +11,7 @@ export const Education = () => (
         {education.map((edu) => (
           <Card
             key={edu.id}
-            className="hover:cursor-pointer transition-colors duration-300"
+            className="hover:cursor-pointer transition-colors duration-300 py-0"
           >
             <CardContent className="px-2.5 py-2  bg-primary/10">
               <div>
