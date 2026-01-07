@@ -3,9 +3,24 @@ import js_basic_img from "./images/js_basic.png";
 import js_int_img from "./images/js_intermediate.png";
 import redux_img from "./images/LWS-Certificate.jpg";
 import node_img from "./images/Node_basic.png";
+import phitron_img from "./images/phitron_cse.jpg";
 import { Certification } from "./types";
 
 export const certifications: Certification[] = [
+  {
+    id: "6",
+    title: "CS Fundamentals With Phitron",
+    issuer: "Phitron",
+    issueDate: "Sep 2025",
+    category: "Programming",
+    description:
+      "It covers topics like Data Structures, Algorithms, Problem Solving, Database Management, Object Oriented Programming",
+    imageUrl: phitron_img,
+    credentialUrl:
+      "https://phitron.io/verification?validationNumber=PHBATCH56254371008",
+    tags: ["DSA", "Problem Solving", "OOP", "DBMS"],
+    status: "active",
+  },
   {
     id: "2",
     title: "Frontend Developer (React)",
