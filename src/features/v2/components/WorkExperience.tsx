@@ -1,4 +1,5 @@
-import { experiences } from "@/data/data";
+import { experiences } from "@/data/experiences";
+
 // 9. Work Experience
 export const WorkExperience = () => (
   <div className="w-full h-full overflow-hidden overflow-y-auto scrollbar-hide hover:scrollbar-hover">
@@ -9,10 +10,10 @@ export const WorkExperience = () => (
           <div key={experience.id} className="relative bg-primary/10">
             <div className=" rounded-xl p-3 shadow-md">
               <div className="">
-                <h3 className="text-base font-bold">{experience.position}</h3>
+                <h3 className="text-base font-bold">{experience.role}</h3>
                 <h4 className="text-sm">{experience.company}</h4>
                 <span className="text-primary text-xs font-semibold">
-                  {experience.period}
+                  {experience.duration}
                 </span>
               </div>
             </div>

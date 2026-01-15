@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { certifications } from "@/data/data";
+import { certifications } from "@/data/certificates";
+
 import { ExternalLink } from "lucide-react";
 // 4. Certifications
 export const Certifications = () => {
@@ -20,9 +21,9 @@ export const Certifications = () => {
                     <h3 className="text-sm font-bold line-clamp-2">
                       {cert.title}
                     </h3>
-                    {cert.credentialLink && (
+                    {cert.credentialUrl && (
                       <a
-                        href={cert.credentialLink}
+                        href={cert.credentialUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center text-primary hover:text-primary/80 font-medium transition-colors"
@@ -33,7 +34,7 @@ export const Certifications = () => {
                   </div>
                   <p className="text-xs my-0.5">{cert.issuer}</p>
                   <div className="flex items-center text-primary text-xs">
-                    {cert.date}
+                    {cert.issueDate}
                   </div>
                 </div>
               </CardContent>

@@ -31,6 +31,14 @@ export const achievements: {
   },
   {
     id: v4(),
+    title: "Community Leader",
+    description:
+      "Founded and managed the JPI Coders Club, fostering knowledge-sharing among 300+ students.",
+    icon: <Users className="h-12 w-12 text-primary" />,
+    year: "2025",
+  },
+  {
+    id: v4(),
     title: "Certifications",
     description:
       "Earned multiple industry-recognized certifications in CSE fundamentals, React, JavaScript, Redux etc.",
@@ -38,14 +46,6 @@ export const achievements: {
     year: "2025",
   },
 
-  {
-    id: v4(),
-    title: "Community Leader",
-    description:
-      "Founded and managed the JPI Coders Club, fostering knowledge-sharing among 300+ students.",
-    icon: <Users className="h-12 w-12 text-primary" />,
-    year: "2025",
-  },
   {
     id: v4(),
     title: "Club Initiater",

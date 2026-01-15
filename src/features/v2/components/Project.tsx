@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { projects } from "@/data/data";
+import { projects } from "@/data/projects";
+
 import { ExternalLink } from "lucide-react";
 
 // 10. Project
@@ -19,24 +20,26 @@ export const Project = () => (
                 <div className="flex justify-between">
                   <h3 className="text-base font-bold mb-0">{project.title}</h3>
                   <div className="flex">
-                    {project.githubLink && (
+                    {project.links.map((link) => (
                       <a
-                        href={project.githubLink}
+                        href={link.link}
+                        key={link.link}
+                        title={link.label}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center text-xs text-foreground/80 hover:text-primary transition-colors"
                       >
                         <ExternalLink className="w-5 h-5 mr-1" />
                       </a>
-                    )}
+                    ))}
                   </div>
                 </div>
                 <p className="text-xs text-muted-foreground my-1">
-                  {project.description}
+                  {project.short_descriptions}
                 </p>
 
                 <div className="flex flex-wrap gap-x-2 mt-1 gap-y-0">
-                  {project.technologies.slice(0, 5).map((tech) => (
+                  {project.tags.slice(0, 5).map((tech) => (
                     <p className="text-xs text-primary mb-1" key={tech}>
                       {tech}
                     </p>

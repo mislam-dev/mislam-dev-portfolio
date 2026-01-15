@@ -6,7 +6,7 @@ import { Certification } from "./types";
 export const certifications: Certification[] = [
   {
     id: "6",
-    title: "CS Fundamentals With Phitron",
+    title: "CSE Fundamentals With Phitron",
     issuer: "Phitron",
     issueDate: "Sep 2025",
     category: "Programming",
