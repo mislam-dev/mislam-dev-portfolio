@@ -45,7 +45,11 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     href: "https://dev.to/mislam-dev",
-    icon: <Image src={devDoTwoIcon} alt="" />,
+    icon: (
+      <span className="bg-white block rounded-full">
+        <Image src={devDoTwoIcon} alt="dev.to" />
+      </span>
+    ),
     label: "Dev.to",
   },
   {
@@ -56,4 +60,4 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ];
 
 export const resumeUrl =
-  "https://drive.google.com/file/d/1hXcSO96vja1D9Alv38FR6EwSRATwFG3X/view?usp=sharing";
+  "https://drive.google.com/file/d/1TgS30G-ksd2Wq0lmVD8wZT6r8D4k4Ish/view?usp=sharing";
