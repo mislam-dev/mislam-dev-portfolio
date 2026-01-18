@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { education } from "@/data/data";
+import { educations } from "@/data/educations";
+
 import { CalendarDays } from "lucide-react";
 // 3. Education
 export const Education = () => (
@@ -8,7 +9,7 @@ export const Education = () => (
       <h2 className="text-xl mb-2">Education</h2>
 
       <div className="space-y-3">
-        {education.map((edu) => (
+        {educations.map((edu) => (
           <Card
             key={edu.id}
             className="hover:cursor-pointer transition-colors duration-300 py-0"
@@ -16,11 +17,11 @@ export const Education = () => (
             <CardContent className="px-2.5 py-2  bg-primary/10">
               <div>
                 <h3 className="text-sm font-bold">{edu.degree}</h3>
-                <p className="text-sm font-medium mt-1">{edu.institution}</p>
+                <p className="text-sm font-medium mt-1">{edu.institute}</p>
 
                 <div className="flex items-center text-xs mt-2 text-primary">
                   <CalendarDays className="h-4 w-4 mr-2" />
-                  <span>{edu.period}</span>
+                  <span>{edu.timeRange}</span>
                 </div>
               </div>
             </CardContent>

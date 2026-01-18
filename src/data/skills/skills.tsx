@@ -38,191 +38,37 @@ export const frontendSkills: Skill[] = [
       </>
     ),
   },
-  {
-    id: v4(),
-    name: "HTML",
-    icon: (
-      <>
-        <Image
-          src={`https://skillicons.dev/icons?i=html`}
-          width="48"
-          height="48"
-          alt="HTML5"
-        />
-      </>
-    ),
-  },
-  {
-    id: v4(),
-    name: "CSS",
-    icon: (
-      <>
-        <Image
-          src={`https://skillicons.dev/icons?i=css`}
-          width="48"
-          height="48"
-          alt="HTML5"
-        />
-      </>
-    ),
-  },
-  {
-    id: v4(),
-    name: "React",
-    icon: (
-      <>
-        <Image
-          src={`https://skillicons.dev/icons?i=react`}
-          width="48"
-          height="48"
-          alt="HTML5"
-        />
-      </>
-    ),
-  },
-  {
-    id: v4(),
-    name: "Next.js",
-    icon: (
-      <>
-        <Image
-          src={`https://skillicons.dev/icons?i=next`}
-          width="48"
-          height="48"
-          alt="HTML5"
-        />
-      </>
-    ),
-  },
-  {
-    id: v4(),
-    name: "Tailwind",
-    icon: (
-      <>
-        <Image
-          src={`https://skillicons.dev/icons?i=tailwind`}
-          width="48"
-          height="48"
-          alt="HTML5"
-        />
-      </>
-    ),
-  },
-  {
-    id: v4(),
-    name: "React Router",
-    icon: (
-      <>
-        <Image
-          src={`https://go-skill-icons.vercel.app/api/icons?i=reactrouter`}
-          width="48"
-          height="48"
-          alt="HTML5"
-        />
-      </>
-    ),
-  },
-  {
-    id: v4(),
-    name: "Hook Form",
-    icon: (
-      <>
-        <Image
-          src={`https://go-skill-icons.vercel.app/api/icons?i=git`}
-          width="48"
-          height="48"
-          alt="HTML5"
-        />
-      </>
-    ),
-  },
-  {
-    id: v4(),
-    name: "Zod",
-    icon: (
-      <>
-        <Image
-          src={`https://skillicons.dev/icons?i=html`}
-          width="48"
-          height="48"
-          alt="HTML5"
-        />
-      </>
-    ),
-  },
-  {
-    id: v4(),
-    name: "ShadCN",
-    icon: (
-      <>
-        <Image
-          src={`https://go-skill-icons.vercel.app/api/icons?i=mongodb`}
-          width="48"
-          height="48"
-          alt="HTML5"
-        />
-      </>
-    ),
-  },
-  {
-    id: v4(),
-    name: "Redux",
-    icon: (
-      <>
-        <Image
-          src={`https://skillicons.dev/icons?i=redux`}
-          width="48"
-          height="48"
-          alt="HTML5"
-        />
-      </>
-    ),
-  },
-  {
-    id: v4(),
-    name: "Zustand",
-    icon: (
-      <>
-        <Image
-          src={`https://go-skill-icons.vercel.app/api/icons?i=zustand`}
-          width="48"
-          height="48"
-          alt="HTML5"
-        />
-      </>
-    ),
-  },
-  {
-    id: v4(),
-    name: "React Query",
-    icon: (
-      <>
-        <Image
-          src={`https://go-skill-icons.vercel.app/api/icons?i=reactquery`}
-          width="48"
-          height="48"
-          alt="HTML5"
-        />
-      </>
-    ),
-  },
-  {
-    id: v4(),
-    name: "API",
-    icon: (
-      <>
-        <Image
-          src={`https://go-skill-icons.vercel.app/api/icons?i=api`}
-          width="48"
-          height="48"
-          alt="HTML5"
-        />
-      </>
-    ),
-  },
 ];
 
 export const backendSkills: Skill[] = [
+  {
+    id: v4(),
+    name: "JavaScript",
+    icon: (
+      <>
+        <Image
+          src={`https://skillicons.dev/icons?i=js`}
+          width="48"
+          height="48"
+          alt="HTML5"
+        />
+      </>
+    ),
+  },
+  {
+    id: v4(),
+    name: "TypeScript",
+    icon: (
+      <>
+        <Image
+          src={`https://skillicons.dev/icons?i=ts`}
+          width="48"
+          height="48"
+          alt="HTML5"
+        />
+      </>
+    ),
+  },
   {
     id: v4(),
     name: "Node.js",
@@ -426,6 +272,34 @@ export const backendSkills: Skill[] = [
       <>
         <Image
           src={`https://go-skill-icons.vercel.app/api/icons?i=api`}
+          width="48"
+          height="48"
+          alt="HTML5"
+        />
+      </>
+    ),
+  },
+  {
+    id: v4(),
+    name: "Microservices",
+    icon: (
+      <>
+        <Image
+          src={`https://go-skill-icons.vercel.app/api/icons?i=apigateway`}
+          width="48"
+          height="48"
+          alt="HTML5"
+        />
+      </>
+    ),
+  },
+  {
+    id: v4(),
+    name: "Swagger",
+    icon: (
+      <>
+        <Image
+          src={`https://go-skill-icons.vercel.app/api/icons?i=swagger`}
           width="48"
           height="48"
           alt="HTML5"
@@ -679,11 +553,11 @@ export const toolSkills: Skill[] = [
   },
   {
     id: v4(),
-    name: "Figma",
+    name: "GitHub Actions",
     icon: (
       <>
         <Image
-          src={`https://go-skill-icons.vercel.app/api/icons?i=figma`}
+          src={`https://go-skill-icons.vercel.app/api/icons?i=githubactions`}
           width="48"
           height="48"
           alt="HTML5"
@@ -693,25 +567,11 @@ export const toolSkills: Skill[] = [
   },
   {
     id: v4(),
-    name: "Microservices",
+    name: "Railway.com",
     icon: (
       <>
         <Image
-          src={`https://go-skill-icons.vercel.app/api/icons?i=apigateway`}
-          width="48"
-          height="48"
-          alt="HTML5"
-        />
-      </>
-    ),
-  },
-  {
-    id: v4(),
-    name: "Swagger",
-    icon: (
-      <>
-        <Image
-          src={`https://go-skill-icons.vercel.app/api/icons?i=swagger`}
+          src={`https://go-skill-icons.vercel.app/api/icons?i=railway`}
           width="48"
           height="48"
           alt="HTML5"

@@ -27,10 +27,10 @@ export const BasicInfo = () => {
         className="text-lg text-muted-foreground w-3/4 mx-auto  animate-fade-in"
         style={{ animationDelay: "0.8s" }}
       >
-        Full-stack developer with 3.5+ years of experience specializing in
-        high-performance React/Next.js applications and Node.js microservices.
-        Proven track record of shipping production-ready, CI/CD-integrated
-        systems and a strong foundation in algorithmic problem-solving.
+        Backend Developer specializing in Node.js, Express, NestJS, and
+        Databases. I design scalable APIs, microservices, and secure systems.
+        Experienced with CI/CD automation and distributed teams. Solved 200+
+        problems on LeetCode and other platforms.
       </p>
 
       <div

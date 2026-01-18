@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { achievements } from "@/data/data";
+import { achievements } from "@/data/achievements";
+
 // 8. Achievements
 export const Achievements = () => {
   return (

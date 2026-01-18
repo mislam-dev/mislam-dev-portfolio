@@ -390,26 +390,7 @@ export const achievements: {
     icon: <ShieldCheck className="h-12 w-12 text-primary" />,
     year: "2025",
   },
-  {
-    id: 3,
-    title: "Youtuber",
-    description:
-      "Manage a tech-focused YouTube channel sharing practical tips, tricks, and tutorials.",
-    icon: (
-      <div className="w-full h-12">
-        <Image
-          src={
-            "https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
-          }
-          alt=""
-          height={100}
-          width={100}
-          className="w-full h-full object-cover"
-        />
-      </div>
-    ),
-    year: "2025",
-  },
+
   {
     id: 4,
     title: "Community Leader",
@@ -422,19 +403,8 @@ export const achievements: {
     id: 2,
     title: "Club Initiater",
     description:
-      "Leading the initiative to establish a department authorized computer club, including drafting the constitution and co-ordinating with faculty for approval.",
+      "Led the initiative to establish a department computer club, including drafting the constitution",
     icon: <PersonStanding className="h-12 w-12 text-primary" />,
     year: "2025",
   },
 ];
-
-/*
-Solved 200+ coding problems across LeetCode and HackerRank.
-Earned multiple industry-recognized certifications in CSE fundamentals, React, JavaScript, Redux etc.
-Manage a tech-focused YouTube channel sharing practical tips, tricks, and tutorials.
-Founded and managed the JPI Coders Club, fostering knowledge-sharing among 300+ students.
-Leading the initiative to establish a department authorized computer club, including drafting the constitution and co-ordinating with faculty for approval.
-
-
-
-*/

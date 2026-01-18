@@ -1,43 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Link, Linkedin, Mail } from "lucide-react";
-
-const links = [
-  {
-    href: "https://github.com/mislam-dev",
-    icon: <Github size={24} />,
-    label: "Github",
-  },
-  {
-    href: "https://linkedin.com/in/mislam-dev",
-    icon: <Linkedin size={24} />,
-    label: "LinkedIn",
-  },
-  {
-    href: "mailto:mmislam027@gmail.com",
-    icon: <Mail size={24} />,
-    label: "Email",
-  },
-  {
-    href: "https://leetcode.com/u/mislamdev",
-    icon: <Link size={24} />,
-    label: "LeetCode",
-  },
-  {
-    href: "https://www.hackerrank.com/profile/codemonkmi",
-    icon: <Link size={24} />,
-    label: "HackerRank",
-  },
-  {
-    href: "https://dev.to/mislam-dev",
-    icon: <Link size={24} />,
-    label: "Dev.to",
-  },
-  {
-    href: "https://www.youtube.com/@mislam-dev",
-    icon: <Link size={24} />,
-    label: "Youtube",
-  },
-];
+import { SOCIAL_LINKS } from "@/data/links";
 
 // 2. Contact Social
 export const ContactSocial = () => (
@@ -45,9 +7,9 @@ export const ContactSocial = () => (
     <div>
       <h4 className="lg:hidden text-xl mb-2 text-left">Links</h4>
       <div className="lg:space-y-2 gap-2 lg:gap-0 grid grid-cols-3 sm:grid-cols-5 md:grid-flow-col lg:grid-cols-1 lg:grid-flow-row">
-        {links.map((link, index) => (
+        {SOCIAL_LINKS.map((link) => (
           <a
-            key={index}
+            key={link.label}
             href={link.href}
             target={link.href.startsWith("http") ? "_blank" : undefined}
             rel={
@@ -72,9 +34,9 @@ export const ContactSocial2 = () => (
     <div>
       <h4 className="hidden text-xl mb-2 text-center">Links</h4>
       <div className="space-y-2">
-        {links.slice(Math.floor(links.length / 2)).map((link, index) => (
+        {SOCIAL_LINKS.slice(Math.floor(SOCIAL_LINKS.length / 2)).map((link) => (
           <a
-            key={index}
+            key={link.label}
             href={link.href}
             target={link.href.startsWith("http") ? "_blank" : undefined}
             rel={

@@ -1,7 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { skills } from "@/data/data";
+
+import { allSkills } from "@/data/skills";
 
 // 6. Skills
+
+const skills = Object.values(allSkills).flat();
+
 export const Skills = () => (
   <div className="w-full h-full overflow-hidden overflow-y-auto scrollbar-hide scrollbar-hover">
     <div className="my-2">
